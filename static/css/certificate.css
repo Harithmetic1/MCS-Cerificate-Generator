@@ -16,31 +16,33 @@ body {
 }
 
 /* Page Content */
-.title {
+
+.page-content h1{
     font-size: 64px;
     margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 5px;
 }
 
-p {
+.page-content p {
     font-size: 20px;
     margin-left: 35px;
 }
 
-.preview {
+.page-content h4{
     font-size: 18px;
     color: #335983;
     margin-top: 45px;
+    margin-left: 35px;
 }
 
-.certificate {
+.page-content img {
     margin-left: 400px;
     margin-top: 50px;
 }
 
 /* Button */
-button {
+.page-content button {
     background-color: #335983;
     color: #ffffff;
     border: none;
@@ -55,5 +57,7 @@ button {
     margin-left: 550px;
     margin-top: 30px;
 }
+
+
 
     
