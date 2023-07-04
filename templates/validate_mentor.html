@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/validate_mentor.css">
     <title>Validate Mentor</title>
 </head>
 <body>
-    
+    <section class="nav-bar">
+        <div class="nav-logo">
+            <img src="../static/images/MCS Logo-White.png"  alt="MCS Logo">
+        </div>
+    </section>
+    <div class="main-contents">
+        <section class="lhs-form">
+            <form action="">
+                <div class="form-header">
+                    <h1>
+                        Validate your credentials
+                    </h1>
+                    <p>
+                        Dear Mentors! </br>
+                        Kindly, Input your details and we’ll verify if you are validated for a certificate.
+                    </p>
+                </div>
+                <div class="form-content">
+                    <div class="email field">
+                        <label for="email">Email</label>
+                        <div class="target-container">
+                            <input type="text" placeholder="Enter your email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="track field">
+                        <label for="track">Role</label>
+                        <div class="target-container">
+                            <select name="track" id="track">
+                                <option value="Select Track" class="disabled-option" selected disabled>Select Your Role</option>
+                                <option value="Public Relations Manager">Social Media Manager</option>
+                                <option value="Public Relations Manager">Graphics Designer</option>
+                                <option value="Public Relations Manager">Backend Development Mentor</option>
+                                <option value="Public Relations Manager">Deep Learning Mentor</option>
+                                <option value="Public Relations Manager">Fronted Mentor</option>
+                                <option value="Public Relations Manager">Mobile App Development Mentor</option>
+                                <option value="Public Relations Manager">Python Programming Mentor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input class="validate-btn" type="submit" value="Validate">
+                </div>
+            </form>
+        </section>
+        <section class="rhs">
+            <div class="image-container">
+                <img src="../static/images/validate-mentor-lg.png" alt="Validate mentor svg from undraw.com">
+            </div>
+        </section>
+    </div>
 </body>
 </html>
