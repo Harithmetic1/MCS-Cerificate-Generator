@@ -108,6 +108,9 @@ body{
 
 /* Media query for desktop image responsiveness */
 @media (max-width: 1024px) {
+    .nav-bar .nav-logo img{
+        padding: 0px 25px;
+    }
     .main-contents .rhs{
         display: none;
     }
