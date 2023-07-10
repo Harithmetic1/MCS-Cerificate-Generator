@@ -7,40 +7,52 @@ body {
 /* Header/Logo Title */
 .header {
     background: #335983;
+    width: 100%;
     height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .header img{
-    margin-left: 30px;
-    margin-top: 8px;
+    width: 73px;
+    aspect-ratio: auto 73 / 68;
+    height: 68px;
+    flex-shrink: 0;
+    object-fit: contain;
+    padding: 0px 70px;
 }
 
 /* Page Content */
-.title {
+
+.page-content h1{
     font-size: 64px;
     margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 5px;
 }
 
-p {
+.page-content p {
     font-size: 20px;
     margin-left: 35px;
 }
 
-.preview {
+.page-content h4{
     font-size: 18px;
     color: #335983;
     margin-top: 45px;
+    margin-left: 35px;
 }
 
-.certificate {
-    margin-left: 400px;
-    margin-top: 50px;
+.page-content .certificate-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Button */
-button {
+.page-content button {
     background-color: #335983;
     color: #ffffff;
     border: none;
@@ -52,8 +64,63 @@ button {
     font-size: 17px;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 #335983 , 0 6px 20px 0 #335983;
-    margin-left: 550px;
-    margin-top: 30px;
 }
+
+.page-content h5{
+    font-size: 18px;
+}
+
+@media  screen and (max-width: 650px) {
+
+    .header {
+        background: #335983;
+        height: 60px;
+    }
+    .header img{
+        padding: 0px 25px;
+    }
+    .page-content h1{
+        font-size: 35px;
+        margin: 50px 25px 5px;
+    }
+
+    .page-content p {
+        font-size: 12px;
+        margin-left: 28px;
+    }
+
+    .page-content h4{
+        font-size: 12px;
+        color: #335983;
+        margin-top: 25px;
+        margin-left: 28px;
+    }
+    .page-content img {
+        width: 312px;
+        height: 215px;
+    }
+
+    .page-content button {
+        background-color: #335983;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 #335983 , 0 6px 20px 0 #335983;
+    }
+
+    .page-content h5{
+        font-size: 12px;
+    }
+  
+    
+}
+
+
 
     
