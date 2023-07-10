@@ -34,11 +34,11 @@ p {
     line-height: 19px;
     color: #000000;
     margin-left: 35px;
+    margin-top: 38px;
 }
 
 .lp-image {
-    margin-left: 400px;
-    margin-top: 50px;
+    object-fit: contain;
 }
 
 .btn {
@@ -100,8 +100,46 @@ button2 {
     width: 40%;
 }
 
-.row:after {
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btns{
+    display: flex;
+}
+
+/* .row:after {
     content: "";
     display: table;
     clear: both;
+} */
+
+@media (max-width: 1024px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .row{
+        justify-content: flex-start;
+    }
+    .btns{
+        margin-top: 84px;
+    }
+    .title{
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 280px;
+    }
+    button1, button2{
+        padding: 15px 21px;
+    }
 }
