@@ -34,11 +34,11 @@ p {
     line-height: 19px;
     color: #000000;
     margin-left: 35px;
+    margin-top: 38px;
 }
 
 .lp-image {
-    margin-left: 400px;
-    margin-top: 50px;
+    object-fit: contain;
 }
 
 .btn {
@@ -46,7 +46,7 @@ p {
     margin: 0 20px;
 }
 
-button1 {
+.button1 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -62,11 +62,9 @@ button1 {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    margin-left: 550px;
-    margin-top: 30px;
 }
 
-button2 {
+.button2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -83,8 +81,6 @@ button2 {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    margin-left: 550px;
-    margin-top: 30px;
 }
 
 .column {
@@ -100,8 +96,71 @@ button2 {
     width: 40%;
 }
 
-.row:after {
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btns{
+    display: flex;
+}
+
+/* .row:after {
     content: "";
     display: table;
     clear: both;
+} */
+
+@media (max-width: 1024px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .row{
+        justify-content: flex-start;
+    }
+    .btns{
+        margin-top: 84px;
+    }
+    .title{
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 280px;
+    }
+    .button1, .button2{
+        padding: 15px 21px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title{
+        margin: 50px 0px 50px 5px;
+        font-size: 2.5rem;
+        width: 90%;
+    }
+    p{
+        margin: 38px 0px 38px 5px;
+        /* font-size: 0.5rem; */
+    }
+    .column{
+        padding: 0;
+    }
+    .btn{
+        margin: 0;
+    }
+    .btns{
+        justify-content: space-evenly;
+    }
+    .button1, .button2{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
 }
