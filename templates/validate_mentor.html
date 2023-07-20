@@ -9,7 +9,9 @@
 <body>
     <section class="nav-bar">
         <div class="nav-logo">
-            <img src="../static/images/MCS Logo-White.png"  alt="MCS Logo">
+            <a href="../index.html">
+                <img src="../static/images/MCS Logo-White.png"  alt="MCS Logo">
+            </a>
         </div>
     </section>
     <div class="main-contents">
@@ -36,17 +38,17 @@
                         <div class="target-container">
                             <select name="track" id="track">
                                 <option value="Select Track" class="disabled-option" selected disabled>Select Your Role</option>
-                                <option value="Public Relations Manager">Social Media Manager</option>
-                                <option value="Public Relations Manager">Graphics Designer</option>
-                                <option value="Public Relations Manager">Backend Development Mentor</option>
-                                <option value="Public Relations Manager">Deep Learning Mentor</option>
-                                <option value="Public Relations Manager">Frontend Development Mentor</option>
-                                <option value="Public Relations Manager">Mobile App Development Mentor</option>
-                                <option value="Public Relations Manager">Python Programming Mentor</option>
+                                <option value="Social Media Manager">Social Media Manager</option>
+                                <option value="Graphics Designer">Graphics Designer</option>
+                                <option value="Backend Development Mentor">Backend Development Mentor</option>
+                                <option value="Deep Learning Mentor">Deep Learning Mentor</option>
+                                <option value="Frontend Development Mentor">Frontend Development Mentor</option>
+                                <option value="Mobile App Development Mentor">Mobile App Development Mentor</option>
+                                <option value="Python Programming Mentor">Python Programming Mentor</option>
                             </select>
                         </div>
                     </div>
-                    <input class="validate-btn" type="submit" value="Validate">
+                    <input class="validate-btn" type="submit" value="Validate" id="validateBtn">
                 </div>
             </form>
         </section>
@@ -57,4 +59,5 @@
         </section>
     </div>
 </body>
+<script src="../app/validate.js"></script>
 </html>
