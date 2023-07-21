@@ -3,6 +3,8 @@ const BASE_URL = "https://mcs-backend.up.railway.app";
 // Endpoint for verifying user for certificate
 const verifyUserEndpoint = `${BASE_URL}/api/validate`;
 
+const downloadCertificate = `${BASE_URL}/api/get_certificate/`;
+
 let requestInProgress = false;
 
 // DOM objects needed in the script
@@ -63,7 +65,9 @@ const validateUser = async (e) => {
       toastDiv.innerHTML = "Congratulations, You are validated!";
       setTimeout(() => {
         // Navigate the user to the certificate page on successful validation
-        window.location.replace("/templates/certificate.html");
+        window.location.replace(
+          `/templates/certificate.html?email=${userInput}`
+        );
       }, 3000);
     } else {
       // If the user is not validated to collect a certificate
@@ -80,3 +84,5 @@ const validateUser = async (e) => {
 
 // Event listener for the submit button
 validateButton.addEventListener("click", validateUser);
+
+function generateCertificate(email) {}
