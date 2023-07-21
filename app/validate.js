@@ -33,9 +33,7 @@ async function verifyUser(email, track) {
   } catch (error) {
     console.log(error);
     requestInProgress = false;
-    return {
-      error: "Network Error",
-    };
+    return false;
   }
 }
 
